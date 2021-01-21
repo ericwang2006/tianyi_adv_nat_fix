@@ -21,11 +21,11 @@ TIANYI(天邑)路由器的端口转发存在bug，某些合法端口无法转发
 
 2. 保证连接互联网，使用任意telnet客户端连接路由器，执行命令
 
-	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_fix.sh |sh -s hotfix`
+	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_nat_fix.sh |sh -s hotfix`
 3. 恢复
 	直接重启路由器或者用telnet连接路由器，执行命令
 	
-	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_fix.sh |sh -s rollback`
+	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_nat_fix.sh |sh -s rollback`
 
 4. 已知问题
 	目前仅在TY300路由器新web界面固件下测试过，其它固件或者其他型号机型没有测试过。
