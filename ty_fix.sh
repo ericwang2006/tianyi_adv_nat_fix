@@ -34,7 +34,7 @@ hotfix() {
 	# 插入tab
 	sed -i "$num {s/^/\t/}" $dir/router.js
 	echo 'download busybox-armv7l...'
-	curl -o $dir/busybox-armv7l http://192.168.2.25/busybox-armv7l && chmod +x $dir/busybox-armv7l
+	curl -k -o $dir/busybox-armv7l https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/busybox-armv7l && chmod +x $dir/busybox-armv7l
 	if [ $? -eq 0 ]; then
 		$dir/busybox-armv7l mount --bind $dir/router.js /webs/ujs/router.js
 		echo 'fix sucess'
