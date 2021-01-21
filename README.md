@@ -20,9 +20,11 @@ TIANYI(天邑)路由器的端口转发存在bug，某些合法端口无法转发
 	或者直接用浏览器访问上面网址
 
 2. 保证连接互联网，使用任意telnet客户端连接路由器，执行命令
+
 	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_fix.sh |sh -s hotfix`
 3. 恢复
 	直接重启路由器或者用telnet连接路由器，执行命令
+	
 	`curl -s -k https://cdn.jsdelivr.net/gh/ericwang2006/tianyi_adv_nat_fix/ty_fix.sh |sh -s rollback`
 
 4. 已知问题
